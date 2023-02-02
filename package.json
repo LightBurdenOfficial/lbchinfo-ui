@@ -4,8 +4,8 @@
   "description": "An open-source frontend for the Lbchinfo API",
   "scripts": {
     "dev": "nuxt",
-    "build": "nuxt build",
-    "start": "nuxt start"
+    "build": "LBCHINFO_API_BASE_CLIENT=/api/ LBCHINFO_API_BASE_SERVER=http://localhost:7001/ LBCHINFO_API_BASE_WS=//explorer.lightburden.com/ nuxt build",
+    "start": "PORT=3000 HOST=0.0.0.0 nuxt start"
   },
   "repository": {
     "type": "git",

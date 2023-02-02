@@ -109,7 +109,7 @@
   export default {
     head() {
       return {
-        title: 'explorer.lightburden.net',
+        title: 'LBCh Block Explorer',
         titleTemplate: null
       }
     },

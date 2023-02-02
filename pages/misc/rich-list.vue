@@ -71,8 +71,11 @@
       },
       totalSupply() {
         let height = this.blockchain.height
-        if (height <= 5000) {
-          return height * 20000
+        if (height <= 10) {
+          return height * 80200
+        }
+        if (height >= 11 && height <= 6000) {
+          return height * 200
         }
         let supply = 1e16
         let reward = 4e8
